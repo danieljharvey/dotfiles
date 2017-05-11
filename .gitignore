@@ -1,0 +1,3 @@
+# gitignore for dotfiles
+
+.vim/bundle/*

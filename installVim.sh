@@ -1,8 +1,9 @@
 #!/bin/bash
 echo -e "Setting up Vim"
 
-ln -s ./.vimrc ~/.vimrc
-ls -s ./.vim ~/.vim
+ln -s .vimrc ~/.vimrc
+ln -s .vim ~/.vim
+cd .vim
 cd bundle
 git clone https://github.com/VundleVim/Vundle.vim vundle
 vim -c 'PluginInstall' -c 'qa!'
