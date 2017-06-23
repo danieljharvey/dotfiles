@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/Daniel/.composer'
-let g:netrw_dirhist_2='/home/daniel'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Daniel/Sites/plop-catcher/src'
+let g:netrw_dirhist_2='/Users/Daniel'
+let g:netrw_dirhist_3='/Users/Daniel/.bash_sessions'
+let g:netrw_dirhist_4='/Users/Daniel'
+let g:netrw_dirhist_5='/Users/Daniel/.adobe'
