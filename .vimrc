@@ -16,6 +16,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dracula/vim'
+Plugin 'derekwyatt/vim-scala'
 
 " new ones
 
