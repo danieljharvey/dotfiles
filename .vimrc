@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dracula/vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'leafgarland/typescript-vim'
 
 " new ones
 
