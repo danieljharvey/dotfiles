@@ -8,7 +8,7 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'jlanzarotta/bufexplorer'
+# Bundle 'jlanzarotta/bufexplorer'
 Plugin 'mxw/vim-jsx'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -18,6 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dracula/vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'tpope/vim-unimpaired'
 
 " new ones
 
