@@ -20,8 +20,12 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'guns/vim-clojure-static'
-Plugin 'kien/rainbow_parentheses'
+" Plugin 'kien/rainbow_parentheses'
 Plugin 'guns/vim-clojure-highlight'
+
+Plugin 'luochen1990/rainbow'
+
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 " new ones
 
