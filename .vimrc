@@ -8,7 +8,7 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-# Bundle 'jlanzarotta/bufexplorer'
+" Bundle 'jlanzarotta/bufexplorer'
 Plugin 'mxw/vim-jsx'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -19,6 +19,9 @@ Plugin 'dracula/vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'guns/vim-clojure-static'
+Plugin 'kien/rainbow_parentheses'
+Plugin 'guns/vim-clojure-highlight'
 
 " new ones
 
