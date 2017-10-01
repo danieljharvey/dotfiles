@@ -25,6 +25,33 @@ Plugin 'guns/vim-clojure-highlight'
 
 Plugin 'luochen1990/rainbow'
 
+" Haskell
+" Plugin 'eagletmt/ghcmod-vim'
+" Plugin 'eagletmt/neco-ghc'
+
+Plugin 'neovimhaskell/haskell-vim'
+
+let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
+let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
+let g:haskell_enable_arrowsyntax = 1      " to enable highlighting of `proc`
+let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
+let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
+let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
+let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
+
+
+" Clojure
+Plugin 'deraen/vim-cider'
+
+" Nerd tree
+Plugin 'scrooloose/nerdtree'
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" Map Control-N to open NERDTree
+map <silent> <C-n> :NERDTreeFocus<CR>
+
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 " new ones
