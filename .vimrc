@@ -43,6 +43,9 @@ let g:haskell_backpack = 1                " to enable highlighting of backpack k
 " Clojure
 Plugin 'deraen/vim-cider'
 
+" PureScript
+Plugin 'raichoo/purescript-vim'
+
 " Nerd tree
 Plugin 'scrooloose/nerdtree'
 
