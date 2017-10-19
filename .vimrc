@@ -44,7 +44,18 @@ let g:haskell_backpack = 1                " to enable highlighting of backpack k
 Plugin 'deraen/vim-cider'
 
 " PureScript
-Plugin 'raichoo/purescript-vim'
+"  Plugin 'raichoo/purescript-vim'
+" syntax on
+" filetype on
+" filetype plugin indent on
+
+" let purescript_indent_if = 3
+" let purescript_indent_case = 5
+" let purescript_indent_let = 4
+" let purescript_indent_where = 6
+" let purescript_indent_do = 3
+" let purescript_indent_in = 1
+" let purescript_indent_dot = v:true
 
 " Nerd tree
 Plugin 'scrooloose/nerdtree'
@@ -88,6 +99,10 @@ set sw=4
 set number
 " shows row and column number at bottom right corner
 set ruler
+
+" set tabs to be 4 spaces
+set tabstop=4
+set expandtab
 
 " For solarized plugin (color scheme)
 " https://github.com/altercation/vim-colors-solarized
