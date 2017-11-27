@@ -68,6 +68,13 @@ map <silent> <C-n> :NERDTreeFocus<CR>
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
+Plugin 'mileszs/ack.vim'
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+
 " new ones
 
 " Plugin 'scrooloose/nerdtree'
