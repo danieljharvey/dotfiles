@@ -76,22 +76,16 @@ endif
 
 
 " new ones
-
-" Plugin 'scrooloose/nerdtree'
-" Plugin 'jistr/vim-nerdtree-tabs'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'xolox/vim-misc'
-" Plugin 'xolox/vim-easytags'
-" Plugin 'majutsushi/tagbar'
-" Plugin 'ctrlpvim/ctrlp.vim'
-" Plugin 'vim-scripts/a.vim'
-" Plugin 'airblade/vim-gitgutter'
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'Raimondi/delimitMate'
 " Plugin 'christoomey/vim-tmux-navigator'
-" Plugin 'jez/vim-c0'
-" Plugin 'jez/vim-ispc'
-" Plugin 'kchmck/vim-coffee-script'
+
+" Prettier support
+Plugin 'prettier/vim-prettier'
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Prettier
+
+let g:prettier#config#semi = 'false'
+let g:prettier#config#single_quote = 'true'
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
