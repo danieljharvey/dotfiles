@@ -1,8 +1,14 @@
 set nocompatible   " be iMproved
 filetype off       " required!
 
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/vundle
 call vundle#rc()
+
+" full colours in ubuntu
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
 
 " let Vundle manage Vundle
 " required!
@@ -39,6 +45,8 @@ let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
 
+" HHVM / Hack
+Plugin 'hhvm/vim-hack'
 
 " Clojure
 Plugin 'deraen/vim-cider'
