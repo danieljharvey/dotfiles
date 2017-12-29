@@ -82,6 +82,9 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" ReasonML
+Bundle 'reasonml-editor/vim-reason'
+au BufReadPost *.re set syntax=reason
 
 " new ones
 " Plugin 'christoomey/vim-tmux-navigator'
