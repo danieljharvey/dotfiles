@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/Daniel/Sites/norwichtech/php-cli-colours/src'
-let g:netrw_dirhist_2='/Users/dhar/Projects/babel/indalo-app'
-let g:netrw_dirhist_3='/Users/dhar/Projects/babel/imali-app'
-let g:netrw_dirhist_4='/Users/dhar/Projects/babel/imali-app/scripts'
-let g:netrw_dirhist_5='/Users/dhar/Projects/babel/imali-app/scripts/validate-content'
-let g:netrw_dirhist_6='/Users/dhar/Projects/babel/imali-app'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/dhar/Projects/babel/imali-app/scripts/validate-content'
+let g:netrw_dirhist_2='/Users/dhar/Projects/babel/imali-app'
+let g:netrw_dirhist_3='/Users/dhar/Projects/babel/imali-app/scripts'
+let g:netrw_dirhist_4='/Users/dhar/Projects/babel/imali-app/scripts/validate-content'
+let g:netrw_dirhist_5='/Users/dhar/Projects/babel/imali-app'
+let g:netrw_dirhist_6='/Users/dhar/Projects/babel/imali-app/scripts'
+let g:netrw_dirhist_7='/Users/dhar/Projects/babel/imali-app/scripts/validate-content'

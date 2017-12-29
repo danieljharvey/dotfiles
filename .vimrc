@@ -79,13 +79,29 @@ endif
 " Plugin 'christoomey/vim-tmux-navigator'
 
 " Prettier support
-Plugin 'prettier/vim-prettier'
+" Plugin 'prettier/vim-prettier'
 
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Prettier
+" let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Prettier
 
-let g:prettier#config#semi = 'false'
-let g:prettier#config#single_quote = 'true'
+" let g:prettier#config#semi = 'false'
+" let g:prettier#config#single_quote = 'true'
+
+" Use NeoFormat to run prettier on JS/TS etc code
+" Plugin 'sbdchd/neoformat'
+" let g:neoformat_try_formatprg = 1
+
+" augroup NeoformatAutoFormat
+"    autocmd!
+"    autocmd FileType javascript, typescript setlocal formatprg=prettier\
+"                                         \--stdin\
+"                                         \--single-quote\ 'true'\
+"                                         \--semi\ 'false'\
+"
+"    autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Neoformat
+
+"augroup END
+
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
