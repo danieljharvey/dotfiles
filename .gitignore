@@ -1,3 +1,7 @@
 # gitignore for dotfiles
 
 .vim/bundle/*
+.vim/vundle/*
+
+# vim swp files
+*.swp
