@@ -68,7 +68,6 @@ let purescript_indent_dot = v:true
 " Elm
 Plugin 'elmcast/elm-vim'
 
-
 " Nerd tree
 Plugin 'scrooloose/nerdtree'
 
