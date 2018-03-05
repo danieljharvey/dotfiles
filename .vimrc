@@ -45,6 +45,9 @@ let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
 
+" Syntax stuff
+Plugin 'w0rp/ale'
+
 " HHVM / Hack
 Plugin 'hhvm/vim-hack'
 
