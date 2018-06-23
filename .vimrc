@@ -1,7 +1,7 @@
 set nocompatible   " be iMproved
 filetype off       " required!
 
-set rtp+=~/.vim/vundle
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " full colours in ubuntu
@@ -44,6 +44,9 @@ let g:haskell_enable_pattern_synonyms = 1 " to enable highlighting of `pattern`
 let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
+
+" Syntax stuff
+Plugin 'w0rp/ale'
 
 " HHVM / Hack
 Plugin 'hhvm/vim-hack'
