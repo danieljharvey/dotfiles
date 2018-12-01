@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/dhar/Learning/elm'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/Daniel/Projects/im-sorry-haskell/hangman'
+let g:netrw_dirhist_2='/Users/Daniel/Projects/im-sorry-haskell/hangman/test'
+let g:netrw_dirhist_3='/Users/Daniel/Projects/im-sorry-haskell/functors'
+let g:netrw_dirhist_4='/Users/Daniel/Projects/im-sorry-haskell/functors/src'
+let g:netrw_dirhist_5='/Users/Daniel/Projects/im-sorry-haskell/functors'
+let g:netrw_dirhist_6='/Users/Daniel/Projects/im-sorry-haskell/functors/src'
+let g:netrw_dirhist_7='/Users/Daniel/Projects/im-sorry-haskell/hangman'
+let g:netrw_dirhist_8='/Users/Daniel/Projects/im-sorry-haskell/functors/app'
