@@ -29,13 +29,15 @@ Plugin 'guns/vim-clojure-static'
 " Plugin 'kien/rainbow_parentheses'
 Plugin 'guns/vim-clojure-highlight'
 
+Plugin 'pangloss/vim-javascript'
+
 Plugin 'luochen1990/rainbow'
 
-" Haskell
-" Plugin 'eagletmt/ghcmod-vim'
-" Plugin 'eagletmt/neco-ghc'
-
 Plugin 'neovimhaskell/haskell-vim'
+
+" Change into symbols
+
+let g:javascript_conceal_function     = "f"
 
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
 let g:haskell_enable_recursivedo = 1      " to enable highlighting of `mdo` and `rec`
@@ -69,7 +71,15 @@ let purescript_indent_in = 1
 let purescript_indent_dot = v:true
 
 " Elm
+
 Plugin 'elmcast/elm-vim'
+
+let g:polyglot_disabled = ['elm']
+let g:elm_detailed_complete = 1
+let g:elm_format_autosave = 1
+let g:elm_syntastic_show_warnings = 1
+
+Plugin 'lambdatoast/elm.vim'
 
 " Nerd tree
 Plugin 'scrooloose/nerdtree'
@@ -91,34 +101,6 @@ endif
 " ReasonML
 Bundle 'reasonml-editor/vim-reason'
 au BufReadPost *.re set syntax=reason
-
-" new ones
-" Plugin 'christoomey/vim-tmux-navigator'
-
-" Prettier support
-" Plugin 'prettier/vim-prettier'
-
-" let g:prettier#autoformat = 0
-" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Prettier
-
-" let g:prettier#config#semi = 'false'
-" let g:prettier#config#single_quote = 'true'
-
-" Use NeoFormat to run prettier on JS/TS etc code
-" Plugin 'sbdchd/neoformat'
-" let g:neoformat_try_formatprg = 1
-
-" augroup NeoformatAutoFormat
-"    autocmd!
-"    autocmd FileType javascript, typescript setlocal formatprg=prettier\
-"                                         \--stdin\
-"                                         \--single-quote\ 'true'\
-"                                         \--semi\ 'false'\
-"
-"    autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md Neoformat
-
-"augroup END
-
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
