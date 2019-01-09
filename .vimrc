@@ -135,14 +135,13 @@ autocmd StdinReadPre * let s:std_in=1
 filetype plugin indent on  " required!
 
 set bs=2
-set ts=4
-set sw=4
+set sw=2
 set number
 " shows row and column number at bottom right corner
 set ruler
 
 " set tabs to be 4 spaces
-set tabstop=4
+set tabstop=2
 set expandtab
 
 " For solarized plugin (color scheme)
