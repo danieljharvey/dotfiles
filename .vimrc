@@ -186,3 +186,22 @@ for tool in s:opam_packages
   endif
 endfor
 " ## end of OPAM user-setup addition for vim / base ## keep this line
+
+Bundle 'bitc/vim-hdevtools'
+Bundle 'scrooloose/syntastic'
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+let g:syntastic_haskell_checkers=['hdevtools']
+
+nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
+  \ file_rec/git:--cached:--others:--exclude-standard<CR>
+
+autocmd FileType unite call s:initialise_unite_buffer()
+function! s:initialise_unite_buffer()
+  " Enable <C-j> and <C-k> for navigating Unite buffers when in insert mode.
+  imap <buffer> <C-j> <Plug>(unite_select_next_line)
+  imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+endfunction
