@@ -134,58 +134,21 @@ autocmd StdinReadPre * let s:std_in=1
 
 filetype plugin indent on  " required!
 
-set bs=2
-set sw=2
-set number
+"set bs=2
+"set sw=2
+"set number
 " shows row and column number at bottom right corner
 set ruler
 
 " set tabs to be 4 spaces
-set tabstop=2
-set expandtab
+"set tabstop=2
+"set expandtab
 
 " For solarized plugin (color scheme)
 " https://github.com/altercation/vim-colors-solarized
 syntax enable
 set background=dark
 colorscheme OceanicNext
-
-" Merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-
-" ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
-let s:opam_share_dir = system("opam config var share")
-let s:opam_share_dir = substitute(s:opam_share_dir, '[\r\n]*$', '', '')
-
-let s:opam_configuration = {}
-
-function! OpamConfOcpIndent()
-  execute "set rtp^=" . s:opam_share_dir . "/ocp-indent/vim"
-endfunction
-let s:opam_configuration['ocp-indent'] = function('OpamConfOcpIndent')
-
-function! OpamConfOcpIndex()
-  execute "set rtp+=" . s:opam_share_dir . "/ocp-index/vim"
-endfunction
-let s:opam_configuration['ocp-index'] = function('OpamConfOcpIndex')
-
-function! OpamConfMerlin()
-  let l:dir = s:opam_share_dir . "/merlin/vim"
-  execute "set rtp+=" . l:dir
-endfunction
-let s:opam_configuration['merlin'] = function('OpamConfMerlin')
-
-let s:opam_packages = ["ocp-indent", "ocp-index", "merlin"]
-let s:opam_check_cmdline = ["opam list --installed --short --safe --color=never"] + s:opam_packages
-let s:opam_available_tools = split(system(join(s:opam_check_cmdline)))
-for tool in s:opam_packages
-  " Respect package order (merlin should be after ocp-index)
-  if count(s:opam_available_tools, tool) > 0
-    call s:opam_configuration[tool]()
-  endif
-endfor
-" ## end of OPAM user-setup addition for vim / base ## keep this line
 
 Bundle 'bitc/vim-hdevtools'
 Bundle 'scrooloose/syntastic'
@@ -205,3 +168,20 @@ function! s:initialise_unite_buffer()
   imap <buffer> <C-j> <Plug>(unite_select_next_line)
   imap <buffer> <C-k> <Plug>(unite_select_previous_line)
 endfunction
+
+" new things to try
+Bundle 'godlygeek/tabular'
+Bundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': '/install -all' }
+Bundle 'tpope/vim-surround'
+
+set colorcolumn=+1
+set copyindent
+set expandtab
+set grepprg=rg\ --vimgrep
+set laststatus=2
+set noswapfile
+set number
+set relativenumber
+set shiftwidth=2
+set tabstop=2
+set textwidth=79
