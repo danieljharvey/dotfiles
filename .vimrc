@@ -9,6 +9,7 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
+" pointless comment
 
 " let Vundle manage Vundle
 " required!
