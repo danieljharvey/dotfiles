@@ -32,9 +32,10 @@ Plugin 'guns/vim-clojure-highlight'
 
 Plugin 'pangloss/vim-javascript'
 
-Plugin 'luochen1990/rainbow'
+" Plugin 'luochen1990/rainbow'
 
 Plugin 'neovimhaskell/haskell-vim'
+Plugin 'nbouscal/vim-stylish-haskell'
 
 " Change into symbols
 
