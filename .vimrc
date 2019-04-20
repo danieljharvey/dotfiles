@@ -9,7 +9,9 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-" pointless comment
+" automatically reload file when it is changed on disk
+set autoread
+au CursorHold * checktime
 
 " let Vundle manage Vundle
 " required!
@@ -136,9 +138,9 @@ autocmd StdinReadPre * let s:std_in=1
 
 filetype plugin indent on  " required!
 
-"set bs=2
-"set sw=2
-"set number
+set bs=2
+set sw=2
+set number
 " shows row and column number at bottom right corner
 set ruler
 
@@ -152,7 +154,7 @@ syntax enable
 set background=dark
 colorscheme OceanicNext
 
-Bundle 'bitc/vim-hdevtools'
+" Bundle 'bitc/vim-hdevtools'
 Bundle 'scrooloose/syntastic'
 
 let g:syntastic_always_populate_loc_list=1

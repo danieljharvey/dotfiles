@@ -5,3 +5,6 @@
 
 # vim swp files
 *.swp
+
+# weird thing
+.netrwhist
