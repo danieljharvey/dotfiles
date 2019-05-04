@@ -110,15 +110,6 @@ let g:elm_syntastic_show_warnings = 1
 
 Plugin 'lambdatoast/elm.vim'
 
-" Nerd tree
-Plugin 'scrooloose/nerdtree'
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-" Map Control-N to open NERDTree
-map <silent> <C-n> :NERDTreeFocus<CR>
-
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 Plugin 'mileszs/ack.vim'
