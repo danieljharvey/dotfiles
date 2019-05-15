@@ -36,6 +36,8 @@ Plugin 'pangloss/vim-javascript'
 
 " Plugin 'luochen1990/rainbow'
 
+Plugin 'vmchale/dhall-vim'
+
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'nbouscal/vim-stylish-haskell'
 
