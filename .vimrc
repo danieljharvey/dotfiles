@@ -76,7 +76,7 @@ let purescript_indent_do = 3
 let purescript_indent_in = 1
 let purescript_indent_dot = v:true
 
-Plugin 'frigoeu/psc-ide-vim'
+Plugin 'danieljharvey/psc-ide-vim'
 " g:psc_ide_syntastic_mode = 1
 "
 nm <buffer> <silent> <leader>L :Plist<CR>
