@@ -93,10 +93,13 @@ nm <buffer> <silent> <leader>g :Pgoto<CR>
 nm <buffer> <silent> <leader>p :Pursuit<CR>
 nm <buffer> <silent> <leader>T :Ptype<CR>
 
+" Nix
 
+Plugin 'LnL7/vim-nix'
 
-
-
+" formatting
+"
+Plugin 'Chiel92/vim-autoformat'
 
 
 
@@ -182,3 +185,4 @@ set relativenumber
 set shiftwidth=2
 set tabstop=2
 set textwidth=79
+set nowrap
