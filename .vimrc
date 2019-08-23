@@ -185,4 +185,5 @@ set relativenumber
 set shiftwidth=2
 set tabstop=2
 set textwidth=79
-set nowrap
+set nowrap           " do not automatically wrap on load
+set formatoptions-=t " do not automatically wrap text when typing
