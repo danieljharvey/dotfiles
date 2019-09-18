@@ -17,7 +17,6 @@ au CursorHold * checktime
 " required!
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-" Bundle 'jlanzarotta/bufexplorer'
 Plugin 'mxw/vim-jsx'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -25,16 +24,16 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dracula/vim'
-Plugin 'derekwyatt/vim-scala'
+" Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'guns/vim-clojure-static'
+" Plugin 'guns/vim-clojure-static'
 " Plugin 'kien/rainbow_parentheses'
-Plugin 'guns/vim-clojure-highlight'
+" Plugin 'guns/vim-clojure-highlight'
 
 Plugin 'pangloss/vim-javascript'
 
-" Plugin 'luochen1990/rainbow'
+Plugin 'luochen1990/rainbow'
 
 Plugin 'vmchale/dhall-vim'
 
@@ -57,10 +56,10 @@ let g:haskell_backpack = 1                " to enable highlighting of backpack k
 Plugin 'w0rp/ale'
 
 " HHVM / Hack
-Plugin 'hhvm/vim-hack'
+" Plugin 'hhvm/vim-hack'
 
 " Clojure
-Plugin 'deraen/vim-cider'
+" Plugin 'deraen/vim-cider'
 
 " PureScript
 Plugin 'raichoo/purescript-vim'
@@ -77,7 +76,7 @@ let purescript_indent_in = 1
 let purescript_indent_dot = v:true
 
 Plugin 'danieljharvey/psc-ide-vim'
-" g:psc_ide_syntastic_mode = 1
+let g:psc_ide_syntastic_mode = 1
 "
 nm <buffer> <silent> <leader>L :Plist<CR>
 nm <buffer> <silent> <leader>l :Pload!<CR>
@@ -106,14 +105,14 @@ Plugin 'Chiel92/vim-autoformat'
 
 " Elm
 
-Plugin 'elmcast/elm-vim'
+" Plugin 'elmcast/elm-vim'
 
-let g:polyglot_disabled = ['elm']
-let g:elm_detailed_complete = 1
-let g:elm_format_autosave = 1
-let g:elm_syntastic_show_warnings = 1
+" let g:polyglot_disabled = ['elm']
+" let g:elm_detailed_complete = 1
+" let g:elm_format_autosave = 1
+" let g:elm_syntastic_show_warnings = 1
 
-Plugin 'lambdatoast/elm.vim'
+" Plugin 'lambdatoast/elm.vim'
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
@@ -157,17 +156,17 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
-let g:syntastic_haskell_checkers=['hdevtools']
+" let g:syntastic_haskell_checkers=['hdevtools']
 
-nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
-  \ file_rec/git:--cached:--others:--exclude-standard<CR>
+" nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
+"   \ file_rec/git:--cached:--others:--exclude-standard<CR>
 
-autocmd FileType unite call s:initialise_unite_buffer()
-function! s:initialise_unite_buffer()
-  " Enable <C-j> and <C-k> for navigating Unite buffers when in insert mode.
-  imap <buffer> <C-j> <Plug>(unite_select_next_line)
-  imap <buffer> <C-k> <Plug>(unite_select_previous_line)
-endfunction
+" autocmd FileType unite call s:initialise_unite_buffer()
+" function! s:initialise_unite_buffer()
+" Enable <C-j> and <C-k> for navigating Unite buffers when in insert mode.
+" imap <buffer> <C-j> <Plug>(unite_select_next_line)
+" imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+" endfunction
 
 " new things to try
 Bundle 'godlygeek/tabular'
