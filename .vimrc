@@ -6,7 +6,7 @@ call vundle#rc()
 
 " full colours in ubuntu
 if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
+  set t_Co=256
 endif
 
 " automatically reload file when it is changed on disk
@@ -55,12 +55,6 @@ let g:haskell_backpack = 1                " to enable highlighting of backpack k
 " Syntax stuff
 Plugin 'w0rp/ale'
 
-" HHVM / Hack
-" Plugin 'hhvm/vim-hack'
-
-" Clojure
-" Plugin 'deraen/vim-cider'
-
 " PureScript
 Plugin 'raichoo/purescript-vim'
 syntax on
@@ -75,7 +69,7 @@ let purescript_indent_do = 3
 let purescript_indent_in = 1
 let purescript_indent_dot = v:true
 
-Plugin 'danieljharvey/psc-ide-vim'
+Plugin 'FrigoEU/psc-ide-vim'
 let g:psc_ide_syntastic_mode = 1
 "
 nm <buffer> <silent> <leader>L :Plist<CR>
@@ -93,26 +87,10 @@ nm <buffer> <silent> <leader>p :Pursuit<CR>
 nm <buffer> <silent> <leader>T :Ptype<CR>
 
 " Nix
-
 Plugin 'LnL7/vim-nix'
 
-" formatting
-"
+" Autoformat
 Plugin 'Chiel92/vim-autoformat'
-
-
-
-
-" Elm
-
-" Plugin 'elmcast/elm-vim'
-
-" let g:polyglot_disabled = ['elm']
-" let g:elm_detailed_complete = 1
-" let g:elm_format_autosave = 1
-" let g:elm_syntastic_show_warnings = 1
-
-" Plugin 'lambdatoast/elm.vim'
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
@@ -158,15 +136,15 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 " let g:syntastic_haskell_checkers=['hdevtools']
 
-" nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
-"   \ file_rec/git:--cached:--others:--exclude-standard<CR>
+nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
+      \ file_rec/git:--cached:--others:--exclude-standard<CR>
 
-" autocmd FileType unite call s:initialise_unite_buffer()
-" function! s:initialise_unite_buffer()
+autocmd FileType unite call s:initialise_unite_buffer()
+function! s:initialise_unite_buffer()
 " Enable <C-j> and <C-k> for navigating Unite buffers when in insert mode.
-" imap <buffer> <C-j> <Plug>(unite_select_next_line)
-" imap <buffer> <C-k> <Plug>(unite_select_previous_line)
-" endfunction
+  imap <buffer> <C-j> <Plug>(unite_select_next_line)
+  imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+endfunction
 
 " new things to try
 Bundle 'godlygeek/tabular'

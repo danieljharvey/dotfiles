@@ -21,17 +21,4 @@ vim -c 'PluginInstall' -c 'qa!'
 echo -e "Copying tmux settings"
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
-echo -e "Setting up Spacemacs"
-
-# tidy up
-rm -R ~/.emacs.d
-cp ~/.spacemacs ~/.spacemacs.old
-rm ~/.spacemacs
-
-# install spacemacs
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-
-# copy over new config
-ln -s ~/dotfiles/.spacemacs ~/.spacemacs
-
 echo -e "Probably fine isn't it"
