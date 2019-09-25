@@ -18,14 +18,16 @@ au CursorHold * checktime
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'mxw/vim-jsx'
+
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Rigellute/rigel'
+Plugin 'challenger-deep-theme/vim'
+Plugin 'morhetz/gruvbox'
 
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'dracula/vim'
 " Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tpope/vim-unimpaired'
@@ -127,7 +129,7 @@ set ruler
 " https://github.com/altercation/vim-colors-solarized
 syntax enable
 set background=dark
-colorscheme OceanicNext
+colorscheme gruvbox
 
 " Bundle 'bitc/vim-hdevtools'
 Bundle 'scrooloose/syntastic'
