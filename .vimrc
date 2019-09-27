@@ -28,12 +28,10 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'derekwyatt/vim-scala'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
+
 Plugin 'tpope/vim-unimpaired'
-" Plugin 'guns/vim-clojure-static'
-" Plugin 'kien/rainbow_parentheses'
-" Plugin 'guns/vim-clojure-highlight'
 
 Plugin 'pangloss/vim-javascript'
 
