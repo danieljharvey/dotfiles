@@ -41,6 +41,7 @@ Plugin 'vmchale/dhall-vim'
 
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'nbouscal/vim-stylish-haskell'
+Plugin 'sdiehl/vim-ormolu'
 
 " Change into symbols
 
