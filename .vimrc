@@ -43,6 +43,9 @@ Plugin 'vmchale/dhall-vim'
 
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'nbouscal/vim-stylish-haskell'
+Plugin 'sdiehl/vim-ormolu'
+
+Plugin 'vim-erlang/vim-erlang-compiler'
 
 " Change into symbols
 
@@ -104,6 +107,11 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+if has('nvim')
+  Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+endif
+
+
 " ReasonML
 Bundle 'reasonml-editor/vim-reason'
 au BufReadPost *.re set syntax=reason
@@ -154,6 +162,16 @@ endfunction
 Bundle 'godlygeek/tabular'
 Bundle 'junegunn/fzf', { 'dir': '~/.fzf', 'do': '/install -all' }
 Bundle 'tpope/vim-surround'
+
+" Prettier
+Bundle "prettier/vim-prettier"
+
+" when running at every change you may want to disable quickfix
+let g:prettier#quickfix_enabled = 0
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
 
 set colorcolumn=+1
 set copyindent
