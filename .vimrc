@@ -43,6 +43,7 @@ Plugin 'neovimhaskell/haskell-vim'
 Plugin 'nbouscal/vim-stylish-haskell'
 Plugin 'sdiehl/vim-ormolu'
 Plugin 'vim-erlang/vim-erlang-compiler'
+Plugin 'elixir-editors/vim-elixir'
 
 " Change into symbols
 
@@ -167,7 +168,7 @@ Bundle "prettier/vim-prettier"
 let g:prettier#quickfix_enabled = 0
 
 let g:prettier#autoformat = 0
-autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 
 set colorcolumn=+1
