@@ -38,6 +38,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'luochen1990/rainbow'
 
 Plugin 'vmchale/dhall-vim'
+Plugin 'LnL7/vim-nix'
 
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'nbouscal/vim-stylish-haskell'
@@ -90,9 +91,6 @@ nm <buffer> <silent> <leader>qa :PaddImportQualifications<CR>
 nm <buffer> <silent> <leader>g :Pgoto<CR>
 nm <buffer> <silent> <leader>p :Pursuit<CR>
 nm <buffer> <silent> <leader>T :Ptype<CR>
-
-" Nix
-Plugin 'LnL7/vim-nix'
 
 " Autoformat
 Plugin 'Chiel92/vim-autoformat'
