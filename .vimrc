@@ -107,6 +107,12 @@ if has('nvim')
   Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 endif
 
+" search with ctrl-f
+Plugin 'ctrlpvim/ctrlp.vim'
+
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_cmd = 'CtrlP'
+
 
 " ReasonML
 Bundle 'reasonml-editor/vim-reason'
