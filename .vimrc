@@ -17,6 +17,8 @@ au CursorHold * checktime
 " required!
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'airblade/vim-gitgutter'
+
 Plugin 'mxw/vim-jsx'
 
 Plugin 'flazz/vim-colorschemes'
