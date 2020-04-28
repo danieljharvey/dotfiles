@@ -15,8 +15,8 @@ ln -s ~/dotfiles/.vim ~/.vim
 cd ~/dotfiles/.vim
 mkdir bundle
 cd bundle
-git clone https://github.com/VundleVim/Vundle.vim vundle
-vim -c 'PluginInstall' -c 'qa!'
+# git clone https://github.com/VundleVim/Vundle.vim vundle
+vim -c 'PlugInstall' -c 'qa!'
 
 echo -e "Copying tmux settings"
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
