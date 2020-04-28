@@ -1,7 +1,12 @@
 # gitignore for dotfiles
 
+# fuck sake apple
+.DS_Store
+
 .vim/bundle/*
 .vim/vundle/*
+.vim/autoload/*
+.vim/plugged/*
 
 # vim swp files
 *.swp
