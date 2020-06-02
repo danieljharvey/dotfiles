@@ -38,7 +38,7 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'tpope/vim-unimpaired'
 
 Plug 'pangloss/vim-javascript'
-
+Plug 'jparise/vim-graphql'
 Plug 'luochen1990/rainbow'
 
 Plug 'vmchale/dhall-vim'
