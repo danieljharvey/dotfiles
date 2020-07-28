@@ -43,6 +43,7 @@ Plug 'luochen1990/rainbow'
 
 Plug 'vmchale/dhall-vim'
 Plug 'LnL7/vim-nix'
+Plug 'idris-hackers/idris-vim'
 
 Plug 'neovimhaskell/haskell-vim'
 Plug 'nbouscal/vim-stylish-haskell'
