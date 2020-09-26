@@ -45,11 +45,18 @@ Plug 'vmchale/dhall-vim'
 Plug 'LnL7/vim-nix'
 Plug 'idris-hackers/idris-vim'
 
+" Haskell
 Plug 'neovimhaskell/haskell-vim'
 Plug 'nbouscal/vim-stylish-haskell'
 Plug 'sdiehl/vim-ormolu'
+Plug 'mpickering/hlint-refactor-vim'
+
+" Erlang
 Plug 'vim-erlang/vim-erlang-compiler'
 Plug 'elixir-editors/vim-elixir'
+
+" Rust
+Plug 'rust-lang/rust.vim'
 
 " Change into symbols
 
