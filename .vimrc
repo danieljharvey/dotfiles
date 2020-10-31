@@ -47,7 +47,6 @@ Plug 'idris-hackers/idris-vim'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
-Plug 'nbouscal/vim-stylish-haskell'
 Plug 'sdiehl/vim-ormolu'
 Plug 'mpickering/hlint-refactor-vim'
 
