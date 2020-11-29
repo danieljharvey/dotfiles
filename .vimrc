@@ -23,6 +23,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'mxw/vim-jsx'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'fsharp/vim-fsharp'
+
 Plug 'flazz/vim-colorschemes'
 Plug 'Rigellute/rigel'
 Plug 'challenger-deep-theme/vim'
