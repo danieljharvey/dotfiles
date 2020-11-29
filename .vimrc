@@ -23,7 +23,10 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'mxw/vim-jsx'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'fsharp/vim-fsharp'
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
 Plug 'flazz/vim-colorschemes'
 Plug 'Rigellute/rigel'
