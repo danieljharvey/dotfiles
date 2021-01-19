@@ -23,8 +23,13 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'mxw/vim-jsx'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'fsharp/vim-fsharp', {
-      \ 'for': 'fsharp',
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'tag': '0.1.155',
+    \ 'do': 'bash install.sh',
+    \ }
+
+Plug 'ionide/Ionide-vim', {
       \ 'do':  'make fsautocomplete',
       \}
 
@@ -58,6 +63,9 @@ Plug 'mpickering/hlint-refactor-vim'
 " Erlang
 Plug 'vim-erlang/vim-erlang-compiler'
 Plug 'elixir-editors/vim-elixir'
+
+" Wasm
+Plug 'rhysd/vim-wasm'
 
 " Rust
 Plug 'rust-lang/rust.vim'
