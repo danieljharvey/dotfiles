@@ -40,8 +40,12 @@ Plug 'morhetz/gruvbox'
 
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
+Plug 'arcticicestudio/nord-vim'
+
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
@@ -63,6 +67,7 @@ Plug 'mpickering/hlint-refactor-vim'
 " Erlang
 Plug 'vim-erlang/vim-erlang-compiler'
 Plug 'elixir-editors/vim-elixir'
+Plug 'hashivim/vim-terraform'
 
 " Wasm
 Plug 'rhysd/vim-wasm'
@@ -98,6 +103,10 @@ let purescript_indent_where = 6
 let purescript_indent_do = 3
 let purescript_indent_in = 1
 let purescript_indent_dot = v:true
+
+" Autosave purescript files with purty
+autocmd filetype purescript nm <buffer> <silent> ,h :!purty --write %<CR>
+
 
 Plug 'FrigoEU/psc-ide-vim'
 let g:psc_ide_syntastic_mode = 1
@@ -156,11 +165,9 @@ set ruler
 "set tabstop=2
 "set expandtab
 
-" For solarized plugin (color scheme)
-" https://github.com/altercation/vim-colors-solarized
-syntax enable
-set background=dark
-colorscheme gruvbox 
+let g:lightline = {
+  \ 'colorscheme': 'nord',
+  \ }
 
 " Plug 'bitc/vim-hdevtools'
 Plug 'scrooloose/syntastic'
@@ -362,3 +369,11 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " initialise plugins
 call plug#end()
+
+" For solarized plugin (color scheme)
+" https://github.com/altercation/vim-colors-solarized
+syntax enable
+set background=dark
+" colorscheme gruvbox 
+colorscheme nord
+
