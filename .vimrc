@@ -41,11 +41,8 @@ Plug 'morhetz/gruvbox'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'jelera/vim-javascript-syntax'
 
-Plug 'arcticicestudio/nord-vim'
-
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
@@ -166,7 +163,7 @@ set ruler
 "set expandtab
 
 let g:lightline = {
-  \ 'colorscheme': 'nord',
+  \ 'colorscheme': 'gruvbox',
   \ }
 
 " Plug 'bitc/vim-hdevtools'
@@ -374,6 +371,5 @@ call plug#end()
 " https://github.com/altercation/vim-colors-solarized
 syntax enable
 set background=dark
-" colorscheme gruvbox 
-colorscheme nord
+colorscheme gruvbox
 
