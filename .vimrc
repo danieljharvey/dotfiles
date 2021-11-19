@@ -72,6 +72,9 @@ Plug 'rhysd/vim-wasm'
 " Rust
 Plug 'rust-lang/rust.vim'
 
+" Run Rustfmt on save
+let g:rustfmt_autosave = 1
+
 " Change into symbols
 
 let g:javascript_conceal_function     = "f"
