@@ -140,13 +140,11 @@ endif
 " search with ctrl-f
 Plug 'ctrlpvim/ctrlp.vim'
 
+" ocaml support
+Plug 'ocaml/vim-ocaml'
+
 let g:ctrlp_map = '<c-f>'
 let g:ctrlp_cmd = 'CtrlP'
-
-
-" ReasonML
-Plug 'reasonml-editor/vim-reason'
-au BufReadPost *.re set syntax=reason
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
