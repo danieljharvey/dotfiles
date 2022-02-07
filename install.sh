@@ -25,4 +25,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+echo -e "Copying .config folders"
+
+cp -R ~/dotfiles/.config ~/. 
+
 echo -e "Probably fine isn't it"

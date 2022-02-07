@@ -33,10 +33,12 @@ Plug 'ionide/Ionide-vim', {
       \ 'do':  'make fsautocomplete',
       \}
 
+" colour schemes and shit
 Plug 'flazz/vim-colorschemes'
 Plug 'Rigellute/rigel'
 Plug 'challenger-deep-theme/vim'
 Plug 'morhetz/gruvbox'
+Plug 'sainnhe/everforest'
 
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'jelera/vim-javascript-syntax'
@@ -72,7 +74,6 @@ Plug 'rhysd/vim-wasm'
 " Rust
 Plug 'rust-lang/rust.vim'
 
-" Run Rustfmt on save
 let g:rustfmt_autosave = 1
 
 " Change into symbols
@@ -372,5 +373,6 @@ call plug#end()
 " https://github.com/altercation/vim-colors-solarized
 syntax enable
 set background=dark
+
 colorscheme gruvbox
 
