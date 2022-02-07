@@ -17,6 +17,7 @@ cd ~/dotfiles/.vim
 mkdir bundle
 cd bundle
 vim -c 'PlugInstall' -c 'qa!'
+nvim -c 'PlugInstall' -c 'qa!'
 
 echo -e "Setting up tmux"
 

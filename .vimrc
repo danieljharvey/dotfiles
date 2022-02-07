@@ -74,6 +74,20 @@ Plug 'rhysd/vim-wasm'
 " Rust
 Plug 'rust-lang/rust.vim'
 
+
+if has('nvim')
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  " Find files using Telescope command-line sugar.
+  nnoremap <leader>ff <cmd>Telescope find_files<cr>
+  nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+  nnoremap <leader>fb <cmd>Telescope buffers<cr>
+  nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+  nnoremap <leader>t <cmd>Telescope <cr>
+endif
+
 let g:rustfmt_autosave = 1
 
 " Change into symbols
@@ -177,8 +191,8 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 " let g:syntastic_haskell_checkers=['hdevtools']
 
-nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
-      \ file_rec/git:--cached:--others:--exclude-standard<CR>
+"nnoremap <Leader>ff :Unite -buffer-name=files -start-insert
+"      \ file_rec/git:--cached:--others:--exclude-standard<CR>
 
 autocmd FileType unite call s:initialise_unite_buffer()
 function! s:initialise_unite_buffer()
