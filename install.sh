@@ -16,7 +16,6 @@ ln -s ~/dotfiles/.vim ~/.vim
 cd ~/dotfiles/.vim
 mkdir bundle
 cd bundle
-vim -c 'PlugInstall' -c 'qa!'
 nvim -c 'PlugInstall' -c 'qa!'
 
 echo -e "Setting up tmux"
@@ -25,6 +24,8 @@ rm -rf ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+
+echo "Remember to run Ctrl-a I to install plugins in tmux"
 
 echo -e "Copying .config folders"
 

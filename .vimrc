@@ -29,22 +29,21 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
-Plug 'ionide/Ionide-vim', {
-      \ 'do':  'make fsautocomplete',
-      \}
-
 " colour schemes and shit
 Plug 'flazz/vim-colorschemes'
 Plug 'Rigellute/rigel'
 Plug 'challenger-deep-theme/vim'
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/everforest'
+Plug 'arcticicestudio/nord-vim'
 
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'jelera/vim-javascript-syntax'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
@@ -78,6 +77,7 @@ Plug 'rust-lang/rust.vim'
 if has('nvim')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   " Find files using Telescope command-line sugar.
@@ -179,7 +179,7 @@ set ruler
 "set expandtab
 
 let g:lightline = {
-  \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'catppuccin',
   \ }
 
 " Plug 'bitc/vim-hdevtools'
@@ -388,5 +388,5 @@ call plug#end()
 syntax enable
 set background=dark
 
-colorscheme gruvbox
+colorscheme catppuccin
 
