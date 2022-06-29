@@ -73,6 +73,8 @@ Plug 'rhysd/vim-wasm'
 " Rust
 Plug 'rust-lang/rust.vim'
 
+" MDX (markdown)
+Plug 'jxnblk/vim-mdx-js'
 
 if has('nvim')
   Plug 'nvim-lua/plenary.nvim'
