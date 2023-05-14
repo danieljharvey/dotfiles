@@ -23,6 +23,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'mxw/vim-jsx'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'danieljharvey/vim-mimsa'
+
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'tag': '0.1.155',
@@ -387,6 +389,10 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " initialise plugins
 call plug#end()
+
+Plug '~/vim-mimsa'
+
+autocmd BufNewFile,BufRead *.mimsa   set syntax=mimsa
 
 " For solarized plugin (color scheme)
 " https://github.com/altercation/vim-colors-solarized

@@ -8,6 +8,10 @@ rm ~/.vimrc
 rm -R ~/.vim
 rm ~/.tmux.conf
 
+# remove local to break cache
+rm -rf .vim
+mkdir .vim
+
 # symlink new vim files
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.vim ~/.vim

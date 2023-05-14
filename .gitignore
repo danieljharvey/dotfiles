@@ -7,6 +7,7 @@
 .vim/vundle/*
 .vim/autoload/*
 .vim/plugged/*
+.vim
 
 # vim swp files
 *.swp
