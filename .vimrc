@@ -66,7 +66,6 @@ Plug 'idris-hackers/idris-vim'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
-Plug 'sdiehl/vim-ormolu'
 Plug 'mpickering/hlint-refactor-vim'
 
 " Erlang
@@ -149,26 +148,10 @@ nm <buffer> <silent> <leader>g :Pgoto<CR>
 nm <buffer> <silent> <leader>p :Pursuit<CR>
 nm <buffer> <silent> <leader>T :Ptype<CR>
 
-" Autoformat
-Plug 'Chiel92/vim-autoformat'
-
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
-
-Plug 'mileszs/ack.vim'
-
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
-
-" search with ctrl-f
-Plug 'ctrlpvim/ctrlp.vim'
 
 " ocaml support
 Plug 'ocaml/vim-ocaml'
-
-let g:ctrlp_map = '<c-f>'
-let g:ctrlp_cmd = 'CtrlP'
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
@@ -195,16 +178,6 @@ let g:lightline = {
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': '/install -all' }
 Plug 'tpope/vim-surround'
-
-" Prettier
-Plug 'prettier/vim-prettier'
-
-" when running at every change you may want to disable quickfix
-let g:prettier#quickfix_enabled = 0
-
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
 
 set colorcolumn=+1
 set copyindent
