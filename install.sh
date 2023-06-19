@@ -8,9 +8,15 @@ rm ~/.vimrc
 rm -R ~/.vim
 rm ~/.tmux.conf
 
+# install neovim package manager (why is this so manual?)
+rm -rf ~/.local/share/nvim/site/pack/packer/start
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 # remove local to break cache
-rm -rf .vim
-mkdir .vim
+# rm -rf .vim
+# mkdir .vim
 
 # symlink new vim files
 ln -s ~/dotfiles/.vimrc ~/.vimrc
