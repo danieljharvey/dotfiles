@@ -179,6 +179,14 @@ Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': '/install -all' }
 Plug 'tpope/vim-surround'
 
+" format things
+Plug 'sbdchd/neoformat'
+
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
+
 set colorcolumn=+1
 set copyindent
 set expandtab
