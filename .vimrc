@@ -47,8 +47,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'jelera/vim-javascript-syntax'
 
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 
 Plug 'leafgarland/typescript-vim'
@@ -63,6 +61,9 @@ Plug 'luochen1990/rainbow'
 Plug 'vmchale/dhall-vim'
 Plug 'LnL7/vim-nix'
 Plug 'idris-hackers/idris-vim'
+
+" justfile
+Plug 'NoahTheDuke/vim-just'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
