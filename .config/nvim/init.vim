@@ -37,6 +37,14 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
+if os.getenv("SMOL_LANGUAGE_SERVER_PATH") then
+  vim.lsp.start({
+    name = 'mimsa',
+    cmd = {os.getenv("SMOL_LANGUAGE_SERVER_PATH")},
+    root_dir = vim.fs.dirname(vim.fs.find({'smol-project.json'}, { upward = true })[1]),
+  })
+end
+
 -- BEGIN copy pasta from https://github.com/neovim/nvim-lspconfig
 
 -- Global mappings.
