@@ -87,6 +87,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 -- END copy pasta from https://github.com/neovim/nvim-lspconfig
 
+-- set up Hasura file highlighting
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.hml",
+  command = "set filetype=yaml",
+})
+
+
 EOF
 
 
