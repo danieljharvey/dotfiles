@@ -24,6 +24,7 @@ Plug 'mxw/vim-jsx'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'danieljharvey/vim-mimsa'
+Plug 'danieljharvey/vim-calc'
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
