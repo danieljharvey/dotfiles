@@ -208,6 +208,8 @@ call plug#end()
 
 autocmd BufNewFile,BufRead *.mimsa   set syntax=mimsa
 
+autocmd BufNewFile,BufRead *.frame   set syntax=frame
+
 " For solarized plugin (color scheme)
 " https://github.com/altercation/vim-colors-solarized
 syntax enable
