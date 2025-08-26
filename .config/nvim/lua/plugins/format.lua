@@ -4,6 +4,7 @@ return {
     formatters_by_ft = {
       ["markdown"] = { "prettier" },
       ["json"] = { "prettier" },
+      ["kotlin"] = { "ktlint" },
     },
   },
 }

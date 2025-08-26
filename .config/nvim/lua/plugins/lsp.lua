@@ -7,6 +7,7 @@ return {
       nixd = {},
       ts_ls = {},
       pyright = {},
+      kotlin = {},
     },
   },
 }
