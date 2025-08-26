@@ -6,6 +6,7 @@ return {
     servers = {
       nixd = {},
       ts_ls = {},
+      pyright = {},
     },
   },
 }
