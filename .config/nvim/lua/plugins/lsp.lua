@@ -8,7 +8,7 @@ return {
       ts_ls = {},
       pyright = {},
       kotlin = {},
-
+      rust_analyzer = {},
     },
   },
 }

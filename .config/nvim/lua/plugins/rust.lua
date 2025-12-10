@@ -20,7 +20,7 @@ return {
     opts = {
       servers = {
         rust_analyzer = {
-          -- Use the rust-analyzer from Nix environment
+          -- Use whatever rust-analyzer is in PATH (provided by Nix)
           cmd = { "rust-analyzer" },
           settings = {
             ["rust-analyzer"] = {

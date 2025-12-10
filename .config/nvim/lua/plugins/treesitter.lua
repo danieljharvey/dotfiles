@@ -7,6 +7,7 @@ return {
       "javascript",
       "json",
       "lua",
+      "rust",
       "tlaplus",
       "markdown",
       "markdown_inline",
