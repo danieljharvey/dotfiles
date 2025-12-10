@@ -1,44 +1,29 @@
 return {
-  -- Configure mason-lspconfig to not auto-install rust-analyzer
+  -- Override rustaceanvim configuration to ensure it uses Nix-provided rust-analyzer
   {
-    "williamboman/mason-lspconfig.nvim",
+    "mrcjkb/rustaceanvim",
     opts = {
-      -- Disable automatic installation for rust-analyzer since we use Nix
-      automatic_installation = {
-        exclude = { "rust_analyzer" },
-      },
-    },
-  },
-  -- Disable Mason's rust-analyzer installation
-  {
-    "mason-org/mason.nvim",
-    opts = {},
-  },
-  -- Configure rust-analyzer to use Nix toolchain
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        rust_analyzer = {
-          -- Use whatever rust-analyzer is in PATH (provided by Nix)
-          cmd = { "rust-analyzer" },
-          settings = {
-            ["rust-analyzer"] = {
-              -- Use Nix-provided Rust toolchain
-              rustc = {
-                source = "discover",
-              },
-              cargo = {
-                buildScripts = {
-                  enable = true,
-                },
-              },
-              procMacro = {
+      server = {
+        cmd = { "rust-analyzer" }, -- Use rust-analyzer from PATH (Nix-provided)
+        default_settings = {
+          ["rust-analyzer"] = {
+            rustc = {
+              source = "discover",
+            },
+            cargo = {
+              allFeatures = true,
+              buildScripts = {
                 enable = true,
               },
-              checkOnSave = {
-                command = "clippy",
-              },
+              loadOutDirsFromCheck = true,
+            },
+            procMacro = {
+              enable = true,
+            },
+            checkOnSave = true,
+            files = {
+              exclude = { ".direnv", ".git", ".jj", ".github", ".gitlab", "bin", "node_modules", "target", "venv", ".venv" },
+              watcher = "client"
             },
           },
         },
